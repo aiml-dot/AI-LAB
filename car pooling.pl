@@ -1,0 +1,19 @@
+%facts
+driver(sanchita,satara,pune).
+driver(prerna,karad,sangli).
+driver(isha,mumbai,delhi).
+driver(vaishnavi,agra,manali).
+driver(aditi,goa,kerala).
+
+%passenger
+passenger(ankita,satara,pune).
+passenger(riddhi,karad,sangli).
+passenger(tejaswini,mumbai,delhi).
+passenger(shrushti,agra,manali).
+passenger(teena,goa,kerala).
+
+%rules
+car_pooling(Driver,Passenger):-
+
+    driver(Driver,From,To),
+    paasenger(Passenger,From,To).
